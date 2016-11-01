@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>苹果</string>
+	<string>三星</string>
+	<string>诺基亚</string>
+	<string>魅族</string>
+	<string>小米</string>
+	<string>华为</string>
+	<string>HTC</string>
+	<string>酷派</string>
+	<string>中兴</string>
+	<string>OPPO</string>
+	<string>ViVo</string>
+	<string>一加</string>
+	<string>锤子</string>
+	<string>乐视</string>
+	<string>可口可乐</string>
+</array>
+</plist>
