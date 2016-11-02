@@ -37,6 +37,8 @@
 		8950BE551D9E4A6E00D8B9B5 /* Field_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950BE541D9E4A6E00D8B9B5 /* Field_1.m */; };
 		8950BE581D9E51F000D8B9B5 /* Field_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950BE571D9E51F000D8B9B5 /* Field_3.m */; };
 		8950BE5C1D9E52A600D8B9B5 /* JKCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950BE5B1D9E52A600D8B9B5 /* JKCountDownButton.m */; };
+		8958493C1DC9E45F004585E7 /* DEMO6_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8958493A1DC9E45F004585E7 /* DEMO6_VC.m */; };
+		8958493F1DC9E4A2004585E7 /* MJMoreBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8958493E1DC9E4A2004585E7 /* MJMoreBtnView.m */; };
 		8979A69E1D6D4AE700A4A4E2 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979A68B1D6D4AE700A4A4E2 /* MJExtensionConst.m */; };
 		8979A69F1D6D4AE700A4A4E2 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979A68D1D6D4AE700A4A4E2 /* MJFoundation.m */; };
 		8979A6A01D6D4AE700A4A4E2 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979A68F1D6D4AE700A4A4E2 /* MJProperty.m */; };
@@ -216,6 +218,10 @@
 		8950BE571D9E51F000D8B9B5 /* Field_3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Field_3.m; sourceTree = "<group>"; };
 		8950BE5A1D9E52A600D8B9B5 /* JKCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCountDownButton.h; sourceTree = "<group>"; };
 		8950BE5B1D9E52A600D8B9B5 /* JKCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCountDownButton.m; sourceTree = "<group>"; };
+		895849391DC9E45F004585E7 /* DEMO6_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMO6_VC.h; sourceTree = "<group>"; };
+		8958493A1DC9E45F004585E7 /* DEMO6_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMO6_VC.m; sourceTree = "<group>"; };
+		8958493D1DC9E4A2004585E7 /* MJMoreBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMoreBtnView.h; sourceTree = "<group>"; };
+		8958493E1DC9E4A2004585E7 /* MJMoreBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMoreBtnView.m; sourceTree = "<group>"; };
 		8979A6891D6D4AE700A4A4E2 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
 		8979A68A1D6D4AE700A4A4E2 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
 		8979A68B1D6D4AE700A4A4E2 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
@@ -693,6 +699,33 @@
 			path = JKCountDownButton;
 			sourceTree = "<group>";
 		};
+		895849371DC9E45F004585E7 /* UIButton(多个按钮) */ = {
+			isa = PBXGroup;
+			children = (
+				895849381DC9E45F004585E7 /* controllers */,
+				8958493B1DC9E45F004585E7 /* views */,
+			);
+			path = "UIButton(多个按钮)";
+			sourceTree = "<group>";
+		};
+		895849381DC9E45F004585E7 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				895849391DC9E45F004585E7 /* DEMO6_VC.h */,
+				8958493A1DC9E45F004585E7 /* DEMO6_VC.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		8958493B1DC9E45F004585E7 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				8958493D1DC9E4A2004585E7 /* MJMoreBtnView.h */,
+				8958493E1DC9E4A2004585E7 /* MJMoreBtnView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		8979A6871D6D4AE700A4A4E2 /* 第三方小组件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1037,6 +1070,7 @@
 		897D8BFC1D6FF11200630817 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				895849371DC9E45F004585E7 /* UIButton(多个按钮) */,
 				891056951DA4EC5F0062185A /* UIWebView(h5) */,
 				8910568C1DA4DD630062185A /* UITextView(多行文本) */,
 				8950BE261D9E3CC000D8B9B5 /* UIAlertViews(弹出视图) */,
@@ -1511,6 +1545,7 @@
 				89EFCD8C1D9CA7460099325D /* YZGRootNavigationController.m in Sources */,
 				891056901DA4E5170062185A /* DEMO4_VC.m in Sources */,
 				8979C2811D7EEBE2008A2D72 /* Reachability.m in Sources */,
+				8958493F1DC9E4A2004585E7 /* MJMoreBtnView.m in Sources */,
 				8979C1F71D7EDF66008A2D72 /* NSString+Extend.m in Sources */,
 				8979C2391D7EE273008A2D72 /* MJRefreshBackNormalFooter.m in Sources */,
 				8979A6DF1D6D6E5B00A4A4E2 /* SDWebImageManager.m in Sources */,
@@ -1598,6 +1633,7 @@
 				8950BE351D9E3FF200D8B9B5 /* CustomAlertView.m in Sources */,
 				8979C23B1D7EE273008A2D72 /* MJRefreshGifHeader.m in Sources */,
 				8979C2741D7EE8F5008A2D72 /* SVHTTPRequest.m in Sources */,
+				8958493C1DC9E45F004585E7 /* DEMO6_VC.m in Sources */,
 				89EFCD9E1D9CED5B0099325D /* DEMO1_VC.m in Sources */,
 				3D50CEF31D8C2EC100CFF87C /* YZGUserManager.m in Sources */,
 				8979A6D81D6D6E5B00A4A4E2 /* MKAnnotationView+WebCache.m in Sources */,
