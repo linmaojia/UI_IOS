@@ -9,28 +9,29 @@
 #import "DEMO6_VC.h"
 #import "Reachability.h"
 #import "MJMoreBtnView.h"
+#import "UIButton+JWCenter.h"
 @interface DEMO6_VC ()
 
-@property (nonatomic, strong) MJMoreBtnView *mjMoreBtnView;
+@property (nonatomic, strong) UIButton *editBtn;
 
 @end
 
 @implementation DEMO6_VC
-- (MJMoreBtnView *)mjMoreBtnView{
-    if(!_mjMoreBtnView){
+- (UIButton *)editBtn {
+    if (!_editBtn) {
+        _editBtn = [[UIButton alloc]init];
+        [_editBtn setImage:[UIImage imageNamed:@"tab_service"] forState:UIControlStateNormal];
+        [_editBtn.imageView setContentMode:UIViewContentModeScaleAspectFit];
+        [_editBtn setTitle:@"分享链接" forState:0];
+        [_editBtn setTitleColor:[UIColor blackColor] forState:0];
+        _editBtn.titleLabel.font = [UIFont systemFontOfSize:13];
+        _editBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+        _editBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 15, 0, 0);//标题居中左偏移15
+        [_editBtn addTarget:self action:@selector(deleBtnClick:) forControlEvents:UIControlEventTouchDown];
+        _editBtn.backgroundColor = [UIColor whiteColor];
         
-        NSArray *imageArray = @[@"icon_obligation",@"icon_committed",@"icon_Receipt",@"icon_order"];
-        NSArray *titleArray = @[@"待付款",@"待发货",@"待收货",@"我的订单"];
-        
-        CGRect frame = CGRectMake(0, 0, SCREEN_WIDTH, 80);
-        _mjMoreBtnView = [[MJMoreBtnView alloc]initWithFrame:frame];
-        [_mjMoreBtnView crearBtnViewWithTitle:titleArray ImgArray:imageArray];
-        _mjMoreBtnView.titleBlock = ^(NSString *title)
-        {
-            NSLog(@"----%@",title);
-        };
     }
-    return _mjMoreBtnView;
+    return _editBtn;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,25 +45,25 @@
     
 }
 
--(void)webViewDidFinishLoad:(UIWebView*)webView
-{
-    [SVProgressHUD dismiss];
-}
 #pragma mark ************** 设置导航栏
 - (void)setNav
 {
-    
+
 }
 
 #pragma mark ************** 添加子控件
 - (void)addSubviewsForView
 {
-    [self.view addSubview:self.mjMoreBtnView];
+    [self.view addSubview:self.editBtn];
 }
 #pragma mark ************** 添加约束
 - (void)addConstraintsForView
 {
-
+    [_editBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(self.view).offset(80);
+        make.height.equalTo(@50);
+        make.width.equalTo(@100);
+    }];
 }
 
 

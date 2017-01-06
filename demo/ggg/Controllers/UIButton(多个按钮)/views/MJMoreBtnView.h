@@ -11,9 +11,7 @@
 /*多个按钮*/
 @interface MJMoreBtnView : UIView
 
-@property (nonatomic,copy) void(^titleBlock)(NSString *title);
+@property (nonatomic,copy) void(^titleBlock)(NSString *title);/*标题回调*/
 
-
-
-- (void)crearBtnViewWithTitle:(NSArray *)titleArray ImgArray:(NSArray *)imgArray;
+- (id)initWithTitles:(NSArray *)titles Images:(NSArray *)images;
 @end

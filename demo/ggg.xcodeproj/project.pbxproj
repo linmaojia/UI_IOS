@@ -22,6 +22,8 @@
 		891056901DA4E5170062185A /* DEMO4_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8910568F1DA4E5170062185A /* DEMO4_VC.m */; };
 		891056941DA4E5D90062185A /* MJTextViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 891056931DA4E5D90062185A /* MJTextViews.m */; };
 		891056991DA4EC5F0062185A /* DEMO5_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 891056981DA4EC5F0062185A /* DEMO5_VC.m */; };
+		893447CD1E1B5A3400661D45 /* UIButton+JWCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 893447CC1E1B5A3400661D45 /* UIButton+JWCenter.m */; };
+		8948B6341DED881E00C75E10 /* MJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8948B6331DED881E00C75E10 /* MJAlertView.m */; };
 		89490A191D93BABA004569A6 /* CZCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89490A181D93BABA004569A6 /* CZCountDownView.m */; };
 		8950BE2C1D9E3D0500D8B9B5 /* DEMO2_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950BE2B1D9E3D0400D8B9B5 /* DEMO2_VC.m */; };
 		8950BE351D9E3FF200D8B9B5 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950BE321D9E3FF200D8B9B5 /* CustomAlertView.m */; };
@@ -189,6 +191,10 @@
 		891056931DA4E5D90062185A /* MJTextViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTextViews.m; sourceTree = "<group>"; };
 		891056971DA4EC5F0062185A /* DEMO5_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMO5_VC.h; sourceTree = "<group>"; };
 		891056981DA4EC5F0062185A /* DEMO5_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMO5_VC.m; sourceTree = "<group>"; };
+		893447CB1E1B5A3400661D45 /* UIButton+JWCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JWCenter.h"; sourceTree = "<group>"; };
+		893447CC1E1B5A3400661D45 /* UIButton+JWCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JWCenter.m"; sourceTree = "<group>"; };
+		8948B6321DED881E00C75E10 /* MJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJAlertView.h; sourceTree = "<group>"; };
+		8948B6331DED881E00C75E10 /* MJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJAlertView.m; sourceTree = "<group>"; };
 		89490A171D93BABA004569A6 /* CZCountDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCountDownView.h; sourceTree = "<group>"; };
 		89490A181D93BABA004569A6 /* CZCountDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCountDownView.m; sourceTree = "<group>"; };
 		8950BE2A1D9E3D0400D8B9B5 /* DEMO2_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMO2_VC.h; sourceTree = "<group>"; };
@@ -665,6 +671,8 @@
 		8950BE301D9E3FC700D8B9B5 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				8948B6321DED881E00C75E10 /* MJAlertView.h */,
+				8948B6331DED881E00C75E10 /* MJAlertView.m */,
 				8950BE421D9E455300D8B9B5 /* YZGAdderssPickerView.h */,
 				8950BE431D9E455300D8B9B5 /* YZGAdderssPickerView.m */,
 				8950BE3D1D9E441F00D8B9B5 /* YZGPickerView.h */,
@@ -702,8 +710,8 @@
 		895849371DC9E45F004585E7 /* UIButton(多个按钮) */ = {
 			isa = PBXGroup;
 			children = (
-				895849381DC9E45F004585E7 /* controllers */,
 				8958493B1DC9E45F004585E7 /* views */,
+				895849381DC9E45F004585E7 /* controllers */,
 			);
 			path = "UIButton(多个按钮)";
 			sourceTree = "<group>";
@@ -720,6 +728,8 @@
 		8958493B1DC9E45F004585E7 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				893447CB1E1B5A3400661D45 /* UIButton+JWCenter.h */,
+				893447CC1E1B5A3400661D45 /* UIButton+JWCenter.m */,
 				8958493D1DC9E4A2004585E7 /* MJMoreBtnView.h */,
 				8958493E1DC9E4A2004585E7 /* MJMoreBtnView.m */,
 			);
@@ -1586,6 +1596,7 @@
 				898AB7241D87E41D001B07A9 /* IQUIViewController+Additions.m in Sources */,
 				8979A6A21D6D4AE700A4A4E2 /* MJPropertyType.m in Sources */,
 				898AB6C81D87BDDC001B07A9 /* YZGRootViewController.m in Sources */,
+				8948B6341DED881E00C75E10 /* MJAlertView.m in Sources */,
 				89EFCDAB1D9CEE9B0099325D /* NAV_4.m in Sources */,
 				8979C2341D7EE273008A2D72 /* MJRefreshHeader.m in Sources */,
 				8979A6A31D6D4AE700A4A4E2 /* NSObject+MJClass.m in Sources */,
@@ -1645,6 +1656,7 @@
 				8979C1FC1D7EDF66008A2D72 /* UIImage+Color.m in Sources */,
 				8979A69E1D6D4AE700A4A4E2 /* MJExtensionConst.m in Sources */,
 				8997C5DA1D51E1C40000DB9A /* main.m in Sources */,
+				893447CD1E1B5A3400661D45 /* UIButton+JWCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

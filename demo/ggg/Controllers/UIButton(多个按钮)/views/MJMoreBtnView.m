@@ -9,95 +9,99 @@
 #import "MJMoreBtnView.h"
 
 @interface MJMoreBtnView()
-{
-     CGFloat view_width,view_height;
-     CGFloat self_width,self_height;
-}
-@property (nonatomic, strong) NSArray *titleArray;
-@property (nonatomic, strong) NSArray *imgArray;
+
+@property (nonatomic, strong) NSArray *titles;
+
+@property (nonatomic, strong) NSArray *images;
+
 @end
 
 @implementation MJMoreBtnView
-- (instancetype)initWithFrame:(CGRect)frame
+#pragma mark ************** init
+- (id)initWithTitles:(NSArray *)titles Images:(NSArray *)images
 {
-    if (self = [super initWithFrame:frame])
-    {
-
-        self_width = self.frame.size.width;
-        self_height = self.frame.size.height;
+    self = [self initWithFrame:CGRectZero];
+    
+    if (self) {
         
-//        [self addSubviewsForView];
-//        [self addConstraintsForView];
+        self.titles = titles;
+        
+        self.images = images;
+        
+        [self addSubviewsForView];
+        
     }
+    
     return self;
+    
 }
-#pragma mark ************** 懒加载控件
-- (void)crearBtnViewWithTitle:(NSArray *)titleArray ImgArray:(NSArray *)imgArray
+#pragma mark ************** 添加子控件
+- (void)addSubviewsForView
 {
-    
-    self.titleArray = titleArray;
-    
-    view_width  =  self_width/titleArray.count;
-    view_height =  self_height;
-    
-    for (int i = 0; i < titleArray.count; i++) {
-        
-        UIView *view = [[UIView alloc]init];
+    for (int i = 0; i < _titles.count; i++)
+    {
+        UIView *view = [[UIView alloc]initWithFrame:CGRectZero];
         view.backgroundColor = [UIColor whiteColor];
         [self addSubview:view];
         view.tag = 100+i;
         view.userInteractionEnabled = YES;
         UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(viewClick:)];
         [view addGestureRecognizer:tap];
-        view.frame = CGRectMake(i*view_width, 0, view_width, view_height);
-        NSLog(@"%@",NSStringFromCGRect( view.frame));
         //图片
-        UIImageView *titleImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-        titleImg.image = [UIImage imageNamed:imgArray[i]];
+        UIImageView *titleImg = [[UIImageView alloc] initWithFrame:CGRectZero];
+        titleImg.image = [UIImage imageNamed:_images[i]];
         [titleImg setContentMode:UIViewContentModeScaleAspectFit];
         [view addSubview:titleImg];
-        titleImg.frame =  CGRectMake(0, 0, 40, 40);
-        titleImg.center = CGPointMake(view_height/2, view_height/2 - 10);
+        titleImg.tag = 200+i;
         
         //文本
-        UILabel *titleLab = [[UILabel alloc] init];
+        UILabel *titleLab = [[UILabel alloc] initWithFrame:CGRectZero];
         titleLab.textAlignment = NSTextAlignmentCenter;
-        titleLab.textColor = RGB(102,102,102);
-        titleLab.font = systemFont(14);
-        titleLab.text = titleArray[i];
+        titleLab.textColor = [UIColor blackColor];
+        titleLab.font = [UIFont systemFontOfSize:14];
+        titleLab.text = _titles[i];
+        titleLab.backgroundColor = [UIColor whiteColor];
         [view addSubview:titleLab];
-        CGFloat titleLab_y = titleImg.frame.origin.y + titleImg.frame.size.height;
-        titleLab.frame =  CGRectMake(0, titleLab_y, view_width, 20);
-        
-        
+        titleLab.tag = 300+i;
     }
-
 }
 
-#pragma mark ************** downView上的button点击事件
+
+#pragma mark ************** subView点击事件
 - (void)viewClick:(UITapGestureRecognizer *)sender
 {
-    
     if(self.titleBlock)
-    {
-        self.titleBlock(self.titleArray[sender.view.tag - 100]);
-    }
+    self.titleBlock(_titles[sender.view.tag - 100]);
 }
 
-#pragma mark ************** 添加子控件
-- (void)addSubviewsForView
+#pragma mark ************** 父控件布局完成
+- (void)layoutSubviews
 {
-//    [self addSubview:self.totalPrices];
+    [super layoutSubviews];
+
+    CGFloat view_W = self.frame.size.width/self.titles.count;
     
+    CGFloat view_H = self.frame.size.height;
+    
+    CGFloat imageView_H = 40;
+    
+    CGFloat lab_H = 20;
 
+    for(int i = 0; i < self.titles.count; i++)
+    {
+        UIView *subView = (UIView *)[self viewWithTag:100+i];
+        subView.frame = CGRectMake(i* view_W, 0, view_W, view_H);
+        //图片
+        UIImageView *imageView = (UIImageView *)[subView viewWithTag:200+i];
+        imageView.frame =  CGRectMake(0, 0, imageView_H, imageView_H);
+        imageView.center = CGPointMake(view_W/2, view_H/2 - 10);
+        //文字
+        UILabel *lable = (UILabel *)[subView viewWithTag:300+i];
+        CGFloat titleLab_y = imageView.frame.origin.y + imageView.frame.size.height + lab_H/2;
+        lable.frame =  CGRectMake(0, 0, view_W, lab_H);
+        lable.center = CGPointMake(view_W/2, titleLab_y);
+        
+    }
+    
 }
-#pragma mark ************** 添加约束
-- (void)addConstraintsForView
-{
-//    [_totalPrices mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.top.right.equalTo(self);
-//        make.height.equalTo(@(10));
-//    }];
-}
-
 @end

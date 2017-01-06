@@ -13,6 +13,7 @@
 #import "YZGPickerView.h"
 #import "YZGDatePicker.h"
 #import "YZGAdderssPickerView.h"
+#import "MJAlertView.h"
 @interface DEMO2_VC ()
 {
     NSMutableArray *buttonArray;    /**< 按钮数组 */
@@ -217,7 +218,7 @@
 }
 -(void)alert4
 {
-    [YZGAlertView showAlertViewWithTitle:@"删除历史" ConfirmBlock:^{
+    [MJAlertView showAlertViewWithTitle:@"删除历史" ConfirmBlock:^{
         NSLog(@"确定");
     } CancelBlock:^{
         NSLog(@"取消");
