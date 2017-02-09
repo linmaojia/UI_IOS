@@ -20,7 +20,7 @@
 }
 @property (nonatomic, strong) UIView *bottomView;    /**< 底部视图 */
 @property (nonatomic, strong) NSArray *classArray;    /**< 类名数组 */
-@property (nonatomic, strong)NSArray *dataArray;
+@property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) NSArray *cityArray;
 
 
