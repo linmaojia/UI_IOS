@@ -385,6 +385,8 @@ static float const TEXT_HEIGHT = 50;  /**< 文本框高度 */
     [self.scroll addSubview:self.passTextField];
     _passTextField.frame = CGRectMake(20, 570, SCREEN_WIDTH - 40, 50);
     
+   
+    
 }
 //移除kvo
 - (void)dealloc{

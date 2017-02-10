@@ -65,7 +65,6 @@
 		8979A6E61D6D6E5B00A4A4E2 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979A6D51D6D6E5B00A4A4E2 /* UIImageView+WebCache.m */; };
 		8979A6E71D6D6E5B00A4A4E2 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979A6D71D6D6E5B00A4A4E2 /* UIView+WebCacheOperation.m */; };
 		8979C1F61D7EDF66008A2D72 /* NSDate+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979C1DD1D7EDF66008A2D72 /* NSDate+Extend.m */; };
-		8979C1F71D7EDF66008A2D72 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979C1E01D7EDF66008A2D72 /* NSString+Extend.m */; };
 		8979C1F81D7EDF66008A2D72 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979C1E21D7EDF66008A2D72 /* NSString+Password.m */; };
 		8979C1F91D7EDF66008A2D72 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979C1E41D7EDF66008A2D72 /* NSString+Size.m */; };
 		8979C1FA1D7EDF66008A2D72 /* NSString+TGHXAddtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979C1E61D7EDF66008A2D72 /* NSString+TGHXAddtions.m */; };
@@ -137,6 +136,7 @@
 		89AA15DC1E4C7404008777CE /* MJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA15DB1E4C7404008777CE /* MJTextField.m */; };
 		89AA16291E4D6819008777CE /* RegExpValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA16261E4D6819008777CE /* RegExpValidate.m */; };
 		89AA162A1E4D6819008777CE /* RegExpValidateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA16281E4D6819008777CE /* RegExpValidateFormat.m */; };
+		89AA162D1E4D9084008777CE /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA162C1E4D9084008777CE /* NSString+Extend.m */; };
 		89EFCD891D9CA3440099325D /* YZGDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFCD881D9CA3440099325D /* YZGDataManage.m */; };
 		89EFCD8C1D9CA7460099325D /* YZGRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFCD8B1D9CA7460099325D /* YZGRootNavigationController.m */; };
 		89EFCD9B1D9CED430099325D /* NAV_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFCD9A1D9CED430099325D /* NAV_1.m */; };
@@ -281,8 +281,6 @@
 		8979A6D71D6D6E5B00A4A4E2 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		8979C1DC1D7EDF66008A2D72 /* NSDate+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extend.h"; sourceTree = "<group>"; };
 		8979C1DD1D7EDF66008A2D72 /* NSDate+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extend.m"; sourceTree = "<group>"; };
-		8979C1DF1D7EDF66008A2D72 /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
-		8979C1E01D7EDF66008A2D72 /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		8979C1E11D7EDF66008A2D72 /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
 		8979C1E21D7EDF66008A2D72 /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
 		8979C1E31D7EDF66008A2D72 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
@@ -432,6 +430,8 @@
 		89AA16261E4D6819008777CE /* RegExpValidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExpValidate.m; sourceTree = "<group>"; };
 		89AA16271E4D6819008777CE /* RegExpValidateFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExpValidateFormat.h; sourceTree = "<group>"; };
 		89AA16281E4D6819008777CE /* RegExpValidateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExpValidateFormat.m; sourceTree = "<group>"; };
+		89AA162B1E4D9084008777CE /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
+		89AA162C1E4D9084008777CE /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		89EFCD871D9CA3440099325D /* YZGDataManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZGDataManage.h; sourceTree = "<group>"; };
 		89EFCD881D9CA3440099325D /* YZGDataManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZGDataManage.m; sourceTree = "<group>"; };
 		89EFCD8A1D9CA7460099325D /* YZGRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZGRootNavigationController.h; sourceTree = "<group>"; };
@@ -859,8 +859,8 @@
 		8979C1DE1D7EDF66008A2D72 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				8979C1DF1D7EDF66008A2D72 /* NSString+Extend.h */,
-				8979C1E01D7EDF66008A2D72 /* NSString+Extend.m */,
+				89AA162B1E4D9084008777CE /* NSString+Extend.h */,
+				89AA162C1E4D9084008777CE /* NSString+Extend.m */,
 				8979C1E11D7EDF66008A2D72 /* NSString+Password.h */,
 				8979C1E21D7EDF66008A2D72 /* NSString+Password.m */,
 				8979C1E31D7EDF66008A2D72 /* NSString+Size.h */,
@@ -1599,7 +1599,6 @@
 				89EFCD8C1D9CA7460099325D /* YZGRootNavigationController.m in Sources */,
 				891056901DA4E5170062185A /* DEMO4_VC.m in Sources */,
 				8979C2811D7EEBE2008A2D72 /* Reachability.m in Sources */,
-				8979C1F71D7EDF66008A2D72 /* NSString+Extend.m in Sources */,
 				8979C2391D7EE273008A2D72 /* MJRefreshBackNormalFooter.m in Sources */,
 				8979A6DF1D6D6E5B00A4A4E2 /* SDWebImageManager.m in Sources */,
 				8979C23C1D7EE273008A2D72 /* MJRefreshNormalHeader.m in Sources */,
@@ -1654,6 +1653,7 @@
 				8979C2801D7EEBE2008A2D72 /* CoreStatus.m in Sources */,
 				3D350C4A1D92CEB900A949B2 /* HMSegmentedControl.m in Sources */,
 				8979C2321D7EE273008A2D72 /* MJRefreshComponent.m in Sources */,
+				89AA162D1E4D9084008777CE /* NSString+Extend.m in Sources */,
 				8979C2381D7EE273008A2D72 /* MJRefreshBackGifFooter.m in Sources */,
 				8979A6E21D6D6E5B00A4A4E2 /* UIImage+GIF.m in Sources */,
 				8979A6E41D6D6E5B00A4A4E2 /* UIImage+WebP.m in Sources */,

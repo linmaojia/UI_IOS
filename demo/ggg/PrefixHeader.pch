@@ -37,6 +37,7 @@
 #import "UINavigationBar+Alpha.h"
 
 //类目
+#import "NSString+Extend.h"
 #import "NSDate+Extend.h"
 #import "NSString+Password.h"
 #import "SVProgressHUD.h"

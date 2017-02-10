@@ -96,7 +96,13 @@
     _placehoderText = placehoderText;
     _placeholderLab.text = placehoderText;
 }
-
+- (void)setLimitTextLength:(int)limitTextLength
+{
+    _limitTextLength = limitTextLength;
+    
+    _limitTextLengthLabel.text = [NSString stringWithFormat:@"%d",limitTextLength];
+    
+}
 - (void)layoutSubviews
 {
     [super layoutSubviews];

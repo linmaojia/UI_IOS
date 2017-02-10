@@ -11,7 +11,7 @@
 #import "JKPlaceholderTextView.h"
 @interface DEMO4_VC ()
 
-@property (nonatomic, strong) MJTextViews *textView;    /**< 自定义textView */
+@property (nonatomic, strong)  MJTextViews *textView;    /**< 自定义textView */
 @property (nonatomic, strong)  JKPlaceholderTextView *centerText;   /**< textView字体垂直居中 */
 
 @end
@@ -32,10 +32,10 @@
 - (MJTextViews *)textView {
     if (!_textView) {
         _textView = [[MJTextViews alloc]init];
-        _textView.limitTextLength = 200;
+        _textView.limitTextLength = 100;
         _textView.layer.borderWidth = 0.5;
         _textView.layer.borderColor = RGB(227, 229, 230).CGColor;
-        _textView.placehoderText = @"请详细描述需要反馈的问题";
+        _textView.placehoderText = @"请详细描述需要反馈的问题888";
         _textView.limitTextLengthBlock = ^(){
             [SVProgressHUD showErrorWithStatus:@"超出字数限制"];
         };
