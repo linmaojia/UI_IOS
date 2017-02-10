@@ -13,11 +13,11 @@
 #import "JKPlaceholderTextView.h"
 #import "JKCountDownButton.h"
 #import "RegExpValidate.h"
-
+#import "MJTextField.h"
 
 static float const TEXT_HEIGHT = 50;  /**< 文本框高度 */
 
-@interface Field_3 ()
+@interface Field_3 ()<UITextFieldDelegate>
 @property(nonatomic, strong)UIButton *nextStepButton;   /**< 下一步 */
 @property(nonatomic, strong) UIView *codeView;   /**< 自定义按钮View */
 
@@ -31,6 +31,8 @@ static float const TEXT_HEIGHT = 50;  /**< 文本框高度 */
 @property(nonatomic, strong) JKPlaceholderTextView *centerText;
 
 @property(nonatomic, strong) UIScrollView *scroll;
+@property (nonatomic, strong) MJTextField *mjTextField;
+@property (nonatomic, strong) MJTextField *passTextField;
 
 
 @end
@@ -38,6 +40,56 @@ static float const TEXT_HEIGHT = 50;  /**< 文本框高度 */
 @implementation Field_3
 
 #pragma mark 懒加载控件
+- (MJTextField *)passTextField{
+    
+    if(!_passTextField){
+        ESWeakSelf;
+        _passTextField = [[[NSBundle mainBundle] loadNibNamed:@"MJTextField" owner:self options:nil] objectAtIndex:0];
+        _passTextField.mTextField.delegate = self;
+        _passTextField.mTextField.returnKeyType = UIReturnKeyJoin;//变为搜索按钮
+        _passTextField.mTextField.placeholder = @"输入密码";
+        _passTextField.mTextField.secureTextEntry = YES;
+        _passTextField.mTextField.keyboardType = UIKeyboardTypeASCIICapable;
+        [_passTextField.leftBtn setImage:[UIImage imageNamed:@"password"] forState:0];
+        [_passTextField.rightBtn setImage:[UIImage imageNamed:@"dl-yincang"] forState:0];
+        [_passTextField.rightBtn setImage:[UIImage imageNamed:@"dl-xianshi"] forState:UIControlStateSelected];
+        _passTextField.rightBtnBlock = ^(BOOL isSelect){
+            
+            __weakSelf.passTextField.mTextField.secureTextEntry = !__weakSelf.passTextField.mTextField.secureTextEntry;
+           
+        };
+    }
+    return _passTextField;
+}
+- (MJTextField *)mjTextField{
+    
+    if(!_mjTextField){
+        ESWeakSelf;
+        _mjTextField = [[[NSBundle mainBundle] loadNibNamed:@"MJTextField" owner:self options:nil] objectAtIndex:0];
+        _mjTextField.mTextField.placeholder = @"输入手机号码";
+        _mjTextField.mTextField.delegate = self;
+        _mjTextField.mTextField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+        [_mjTextField.leftBtn setImage:[UIImage imageNamed:@"Shape-"] forState:0];
+        [_mjTextField.rightBtn setImage:[UIImage imageNamed:@"dl-yincang"] forState:0];
+        [_mjTextField.rightBtn setImage:[UIImage imageNamed:@"dl-xianshi"] forState:UIControlStateSelected];
+        _mjTextField.rightBtnBlock = ^(BOOL isSelect){
+            
+            [__weakSelf rightBtnClickWith:isSelect];
+        };
+    }
+    return _mjTextField;
+}
+- (void)rightBtnClickWith:(BOOL)isSelect
+{
+    if(isSelect)
+    {
+        NSLog(@"选中");
+    }
+    else
+    {
+        NSLog(@"不选中");
+    }
+}
 - (JKPlaceholderTextView *)centerText {
     if (!_centerText) {
         _centerText = [[JKPlaceholderTextView alloc] init];
@@ -327,6 +379,12 @@ static float const TEXT_HEIGHT = 50;  /**< 文本框高度 */
     }];
     
     
+    [self.scroll addSubview:self.mjTextField];
+    _mjTextField.frame = CGRectMake(20, 500, SCREEN_WIDTH - 40, 50);
+    
+    [self.scroll addSubview:self.passTextField];
+    _passTextField.frame = CGRectMake(20, 570, SCREEN_WIDTH - 40, 50);
+    
 }
 //移除kvo
 - (void)dealloc{
@@ -337,5 +395,27 @@ static float const TEXT_HEIGHT = 50;  /**< 文本框高度 */
     [super didReceiveMemoryWarning];
 }
 
-
+///////// 键盘 return 点击事件
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    
+    if(textField == _passTextField.mTextField)
+    {
+        NSLog(@"点击了密码 return");
+        [_passTextField.mTextField resignFirstResponder];
+        
+        if(![RegExpValidate validateMobile:_mjTextField.mTextField.text])
+        {
+            [SVProgressHUD showErrorWithStatus:@"手机格式不正确"];
+        }
+        
+    }
+    else
+    {
+        NSLog(@"点击了其他 return");//换行
+        [_passTextField.mTextField becomeFirstResponder];
+    }
+    
+    return YES;
+}
 @end

@@ -20,9 +20,13 @@
 //        self.layer.borderColor = RGB(227, 229, 230).CGColor;
         
         self.leftViewPadding = 10.f;
+        
         self.rightViewPadding = 10.f;
         
         self.centerViewPadding = 0.0f;//中间View
+       
+        //清除按钮距离右边边距
+//        self.cleanPadding =60.f;//设置器
     }
     return self;
 }
@@ -82,6 +86,24 @@
     
     return editingRect;
 }
+
+
+///////////////////////////////重写
+//- (void)setCleanPadding:(CGFloat)cleanPadding
+//{
+//    _cleanPadding = cleanPadding;
+//    
+//    [self clearButtonRectForBounds:self.bounds];
+//}
+////重写clearButton的origin.x值
+//- (CGRect)clearButtonRectForBounds:(CGRect)bounds
+//{
+//    CGRect cleanViewRect = [super clearButtonRectForBounds:bounds];
+//    
+//    cleanViewRect.origin.x -= _cleanPadding;
+//    
+//    return cleanViewRect;
+//}
 
 
 @end

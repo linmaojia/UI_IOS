@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3D350C4A1D92CEB900A949B2 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D350C491D92CEB900A949B2 /* HMSegmentedControl.m */; };
 		3D50CEDE1D8C2A7000CFF87C /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D50CEDD1D8C2A7000CFF87C /* city.plist */; };
-		3D50CEEF1D8C2EC100CFF87C /* RegExpValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50CEE51D8C2EC100CFF87C /* RegExpValidate.m */; };
-		3D50CEF01D8C2EC100CFF87C /* RegExpValidateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50CEE71D8C2EC100CFF87C /* RegExpValidateFormat.m */; };
 		3D50CEF11D8C2EC100CFF87C /* YZGAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50CEEA1D8C2EC100CFF87C /* YZGAccessToken.m */; };
 		3D50CEF21D8C2EC100CFF87C /* YZGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50CEEC1D8C2EC100CFF87C /* YZGUser.m */; };
 		3D50CEF31D8C2EC100CFF87C /* YZGUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50CEEE1D8C2EC100CFF87C /* YZGUserManager.m */; };
@@ -133,6 +131,12 @@
 		8997C5E81D51E1C40000DB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8997C5E61D51E1C40000DB9A /* LaunchScreen.storyboard */; };
 		8997C5F31D51E1C40000DB9A /* gggTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8997C5F21D51E1C40000DB9A /* gggTests.m */; };
 		8997C5FE1D51E1C50000DB9A /* gggUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8997C5FD1D51E1C50000DB9A /* gggUITests.m */; };
+		89AA15CE1E4C52FC008777CE /* DEMO7_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA15CD1E4C52FC008777CE /* DEMO7_VC.m */; };
+		89AA15D21E4C54F9008777CE /* UILabel+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA15D11E4C54F9008777CE /* UILabel+Extend.m */; };
+		89AA15D91E4C73EE008777CE /* MJTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89AA15D81E4C73EE008777CE /* MJTextField.xib */; };
+		89AA15DC1E4C7404008777CE /* MJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA15DB1E4C7404008777CE /* MJTextField.m */; };
+		89AA16291E4D6819008777CE /* RegExpValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA16261E4D6819008777CE /* RegExpValidate.m */; };
+		89AA162A1E4D6819008777CE /* RegExpValidateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA16281E4D6819008777CE /* RegExpValidateFormat.m */; };
 		89EFCD891D9CA3440099325D /* YZGDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFCD881D9CA3440099325D /* YZGDataManage.m */; };
 		89EFCD8C1D9CA7460099325D /* YZGRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFCD8B1D9CA7460099325D /* YZGRootNavigationController.m */; };
 		89EFCD9B1D9CED430099325D /* NAV_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFCD9A1D9CED430099325D /* NAV_1.m */; };
@@ -166,10 +170,6 @@
 		3D350C481D92CEB900A949B2 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		3D350C491D92CEB900A949B2 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		3D50CEDD1D8C2A7000CFF87C /* city.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = city.plist; sourceTree = "<group>"; };
-		3D50CEE41D8C2EC100CFF87C /* RegExpValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExpValidate.h; sourceTree = "<group>"; };
-		3D50CEE51D8C2EC100CFF87C /* RegExpValidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExpValidate.m; sourceTree = "<group>"; };
-		3D50CEE61D8C2EC100CFF87C /* RegExpValidateFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExpValidateFormat.h; sourceTree = "<group>"; };
-		3D50CEE71D8C2EC100CFF87C /* RegExpValidateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExpValidateFormat.m; sourceTree = "<group>"; };
 		3D50CEE91D8C2EC100CFF87C /* YZGAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZGAccessToken.h; sourceTree = "<group>"; };
 		3D50CEEA1D8C2EC100CFF87C /* YZGAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZGAccessToken.m; sourceTree = "<group>"; };
 		3D50CEEB1D8C2EC100CFF87C /* YZGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZGUser.h; sourceTree = "<group>"; };
@@ -421,6 +421,17 @@
 		8997C5F91D51E1C50000DB9A /* gggUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gggUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8997C5FD1D51E1C50000DB9A /* gggUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gggUITests.m; sourceTree = "<group>"; };
 		8997C5FF1D51E1C50000DB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89AA15CC1E4C52FC008777CE /* DEMO7_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMO7_VC.h; sourceTree = "<group>"; };
+		89AA15CD1E4C52FC008777CE /* DEMO7_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMO7_VC.m; sourceTree = "<group>"; };
+		89AA15D01E4C54F9008777CE /* UILabel+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extend.h"; sourceTree = "<group>"; };
+		89AA15D11E4C54F9008777CE /* UILabel+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extend.m"; sourceTree = "<group>"; };
+		89AA15D81E4C73EE008777CE /* MJTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MJTextField.xib; sourceTree = "<group>"; };
+		89AA15DA1E4C7404008777CE /* MJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTextField.h; sourceTree = "<group>"; };
+		89AA15DB1E4C7404008777CE /* MJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTextField.m; sourceTree = "<group>"; };
+		89AA16251E4D6819008777CE /* RegExpValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExpValidate.h; sourceTree = "<group>"; };
+		89AA16261E4D6819008777CE /* RegExpValidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExpValidate.m; sourceTree = "<group>"; };
+		89AA16271E4D6819008777CE /* RegExpValidateFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExpValidateFormat.h; sourceTree = "<group>"; };
+		89AA16281E4D6819008777CE /* RegExpValidateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExpValidateFormat.m; sourceTree = "<group>"; };
 		89EFCD871D9CA3440099325D /* YZGDataManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZGDataManage.h; sourceTree = "<group>"; };
 		89EFCD881D9CA3440099325D /* YZGDataManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZGDataManage.m; sourceTree = "<group>"; };
 		89EFCD8A1D9CA7460099325D /* YZGRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZGRootNavigationController.h; sourceTree = "<group>"; };
@@ -518,21 +529,9 @@
 		3D50CEE21D8C2EC100CFF87C /* Tools(工具类) */ = {
 			isa = PBXGroup;
 			children = (
-				3D50CEE31D8C2EC100CFF87C /* RegExp-正则验证 */,
 				3D50CEE81D8C2EC100CFF87C /* UserTools */,
 			);
 			path = "Tools(工具类)";
-			sourceTree = "<group>";
-		};
-		3D50CEE31D8C2EC100CFF87C /* RegExp-正则验证 */ = {
-			isa = PBXGroup;
-			children = (
-				3D50CEE41D8C2EC100CFF87C /* RegExpValidate.h */,
-				3D50CEE51D8C2EC100CFF87C /* RegExpValidate.m */,
-				3D50CEE61D8C2EC100CFF87C /* RegExpValidateFormat.h */,
-				3D50CEE71D8C2EC100CFF87C /* RegExpValidateFormat.m */,
-			);
-			path = "RegExp-正则验证";
 			sourceTree = "<group>";
 		};
 		3D50CEE81D8C2EC100CFF87C /* UserTools */ = {
@@ -645,6 +644,7 @@
 		8950BE281D9E3CC000D8B9B5 /* UITextField(文本框) */ = {
 			isa = PBXGroup;
 			children = (
+				89AA15D71E4C73DB008777CE /* View */,
 				8950BE4D1D9E496A00D8B9B5 /* DEMO3_VC.h */,
 				8950BE4E1D9E496A00D8B9B5 /* DEMO3_VC.m */,
 				8950BE291D9E3CC000D8B9B5 /* controllers */,
@@ -825,6 +825,7 @@
 		8979C1D91D7EDF66008A2D72 /* 拓展 */ = {
 			isa = PBXGroup;
 			children = (
+				89AA16241E4D6819008777CE /* RegExp-正则验证 */,
 				8979C1DA1D7EDF66008A2D72 /* Category(分类) */,
 			);
 			name = "拓展";
@@ -834,6 +835,7 @@
 		8979C1DA1D7EDF66008A2D72 /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				89AA15CF1E4C54F9008777CE /* UILabel */,
 				89EFCDAE1D9D0F110099325D /* UINavigationBar */,
 				897D8C0F1D703CDF00630817 /* UIColor */,
 				8979C1DB1D7EDF66008A2D72 /* NSDate */,
@@ -1075,6 +1077,7 @@
 		897D8BFC1D6FF11200630817 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				89AA15CA1E4C52DE008777CE /* UILabel(文本) */,
 				895849371DC9E45F004585E7 /* UIButton(多个按钮) */,
 				891056951DA4EC5F0062185A /* UIWebView(h5) */,
 				8910568C1DA4DD630062185A /* UITextView(多行文本) */,
@@ -1300,6 +1303,53 @@
 			path = gggUITests;
 			sourceTree = "<group>";
 		};
+		89AA15CA1E4C52DE008777CE /* UILabel(文本) */ = {
+			isa = PBXGroup;
+			children = (
+				89AA15CB1E4C52DE008777CE /* controller */,
+			);
+			path = "UILabel(文本)";
+			sourceTree = "<group>";
+		};
+		89AA15CB1E4C52DE008777CE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				89AA15CC1E4C52FC008777CE /* DEMO7_VC.h */,
+				89AA15CD1E4C52FC008777CE /* DEMO7_VC.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		89AA15CF1E4C54F9008777CE /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				89AA15D01E4C54F9008777CE /* UILabel+Extend.h */,
+				89AA15D11E4C54F9008777CE /* UILabel+Extend.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		89AA15D71E4C73DB008777CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89AA15D81E4C73EE008777CE /* MJTextField.xib */,
+				89AA15DA1E4C7404008777CE /* MJTextField.h */,
+				89AA15DB1E4C7404008777CE /* MJTextField.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89AA16241E4D6819008777CE /* RegExp-正则验证 */ = {
+			isa = PBXGroup;
+			children = (
+				89AA16251E4D6819008777CE /* RegExpValidate.h */,
+				89AA16261E4D6819008777CE /* RegExpValidate.m */,
+				89AA16271E4D6819008777CE /* RegExpValidateFormat.h */,
+				89AA16281E4D6819008777CE /* RegExpValidateFormat.m */,
+			);
+			path = "RegExp-正则验证";
+			sourceTree = "<group>";
+		};
 		89EFCD971D9CED300099325D /* 导航栏 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1446,6 +1496,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89AA15D91E4C73EE008777CE /* MJTextField.xib in Resources */,
 				8997C5E81D51E1C40000DB9A /* LaunchScreen.storyboard in Resources */,
 				8997C5E51D51E1C40000DB9A /* Assets.xcassets in Resources */,
 				3D50CEDE1D8C2A7000CFF87C /* city.plist in Resources */,
@@ -1529,7 +1580,6 @@
 				8997C5E01D51E1C40000DB9A /* ViewController.m in Sources */,
 				8979C1F61D7EDF66008A2D72 /* NSDate+Extend.m in Sources */,
 				8979C1FD1D7EDF66008A2D72 /* UIBarButtonItem+ButtonItem.m in Sources */,
-				3D50CEEF1D8C2EC100CFF87C /* RegExpValidate.m in Sources */,
 				8979C2311D7EE273008A2D72 /* MJRefreshBackFooter.m in Sources */,
 				89EFCDAD1D9CEE9B0099325D /* NAV_6.m in Sources */,
 				8979C23A1D7EE273008A2D72 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1541,7 +1591,6 @@
 				8979A6A51D6D4AE700A4A4E2 /* NSObject+MJKeyValue.m in Sources */,
 				891056941DA4E5D90062185A /* MJTextViews.m in Sources */,
 				3D50CEF21D8C2EC100CFF87C /* YZGUser.m in Sources */,
-				3D50CEF01D8C2EC100CFF87C /* RegExpValidateFormat.m in Sources */,
 				89EFCD9B1D9CED430099325D /* NAV_1.m in Sources */,
 				898AB72B1D87E41D001B07A9 /* IQTitleBarButtonItem.m in Sources */,
 				8979C2361D7EE273008A2D72 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1559,6 +1608,7 @@
 				898AB7201D87E41D001B07A9 /* IQNSArray+Sort.m in Sources */,
 				898AB7291D87E41D001B07A9 /* IQBarButtonItem.m in Sources */,
 				3D7A0F981D940EBC00C6E04B /* JVFloatLabeledTextField.m in Sources */,
+				89AA15DC1E4C7404008777CE /* MJTextField.m in Sources */,
 				8979A6DC1D6D6E5B00A4A4E2 /* SDWebImageDecoder.m in Sources */,
 				89EFCDAA1D9CEE9B0099325D /* NAV_3.m in Sources */,
 				8979C26D1D7EE81E008A2D72 /* UIView+Empty.m in Sources */,
@@ -1585,6 +1635,8 @@
 				3D50CEF11D8C2EC100CFF87C /* YZGAccessToken.m in Sources */,
 				898AB72A1D87E41D001B07A9 /* IQPreviousNextView.m in Sources */,
 				8979A6E61D6D6E5B00A4A4E2 /* UIImageView+WebCache.m in Sources */,
+				89AA162A1E4D6819008777CE /* RegExpValidateFormat.m in Sources */,
+				89AA15D21E4C54F9008777CE /* UILabel+Extend.m in Sources */,
 				898AB7221D87E41D001B07A9 /* IQUITextFieldView+Additions.m in Sources */,
 				8979A6A11D6D4AE700A4A4E2 /* MJPropertyKey.m in Sources */,
 				898AB7241D87E41D001B07A9 /* IQUIViewController+Additions.m in Sources */,
@@ -1595,6 +1647,7 @@
 				8979C2341D7EE273008A2D72 /* MJRefreshHeader.m in Sources */,
 				8979A6A31D6D4AE700A4A4E2 /* NSObject+MJClass.m in Sources */,
 				8950BE3F1D9E441F00D8B9B5 /* YZGPickerView.m in Sources */,
+				89AA16291E4D6819008777CE /* RegExpValidate.m in Sources */,
 				897D8C121D703CDF00630817 /* UIColor+HexColor.m in Sources */,
 				8950BE2C1D9E3D0500D8B9B5 /* DEMO2_VC.m in Sources */,
 				8979C1FF1D7EDF66008A2D72 /* UIView+Extend.m in Sources */,
@@ -1631,6 +1684,7 @@
 				8979C1F91D7EDF66008A2D72 /* NSString+Size.m in Sources */,
 				8979A6A41D6D4AE700A4A4E2 /* NSObject+MJCoding.m in Sources */,
 				8979A6E31D6D6E5B00A4A4E2 /* UIImage+MultiFormat.m in Sources */,
+				89AA15CE1E4C52FC008777CE /* DEMO7_VC.m in Sources */,
 				898AB7351D87EE5B001B07A9 /* JKPlaceholderTextView.m in Sources */,
 				8979A6E11D6D6E5B00A4A4E2 /* UIButton+WebCache.m in Sources */,
 				8979C2731D7EE8F5008A2D72 /* SVHTTPClient.m in Sources */,

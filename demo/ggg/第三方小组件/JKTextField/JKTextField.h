@@ -16,4 +16,6 @@
 
 @property(nonatomic, assign)CGFloat centerViewPadding; /**< 文本框边距 */
 
+@property(nonatomic, assign)CGFloat cleanPadding; /**< 清除按钮边距 */
+
 @end

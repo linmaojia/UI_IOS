@@ -14,6 +14,7 @@
 #import "DEMO4_VC.h"
 #import "DEMO5_VC.h"
 #import "DEMO6_VC.h"
+#import "DEMO7_VC.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
 }
@@ -39,14 +40,14 @@
 - (NSArray *)nameArray {
     
     if (!_nameArray) {
-        _nameArray = @[@"导航栏-1",@"弹出框-2",@"UITextField-3",@"UITextView-4",@"UIWebView-5",@"UIButton-6"];
+        _nameArray = @[@"导航栏-1",@"弹出框-2",@"UITextField-3",@"UITextView-4",@"UIWebView-5",@"UIButton-6",@"UILabel-7"];
         
     }
     return _nameArray;
 }
 - (NSArray *)classArray {
     if (!_classArray) {
-        _classArray = @[[DEMO1_VC class],[DEMO2_VC class],[DEMO3_VC class],[DEMO4_VC class],[DEMO5_VC class],[DEMO6_VC class]];
+        _classArray = @[[DEMO1_VC class],[DEMO2_VC class],[DEMO3_VC class],[DEMO4_VC class],[DEMO5_VC class],[DEMO6_VC class],[DEMO7_VC class]];
         
     }
     return _classArray;

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MJTextField" id="iN0-l3-epB" customClass="MJTextField">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ti7-zE-Mho">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HKr-MU-Tox">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="uwI-vv-I57"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kv-Sx-ecz" userLabel="Button1">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="MDf-im-bB8"/>
+                                <constraint firstAttribute="height" constant="30" id="hP3-A7-uTb"/>
+                            </constraints>
+                            <state key="normal" image="Shape-"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwg-9I-H1L">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Ute-V3-p5T"/>
+                                <constraint firstAttribute="width" constant="30" id="ngr-zp-Wa6"/>
+                            </constraints>
+                            <state key="normal" image="password"/>
+                            <connections>
+                                <action selector="rightBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="KcO-we-SLH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cwg-9I-H1L" secondAttribute="trailing" constant="10" id="KeS-jr-Vds"/>
+                        <constraint firstItem="4Kv-Sx-ecz" firstAttribute="centerY" secondItem="ti7-zE-Mho" secondAttribute="centerY" id="WPc-x4-41N"/>
+                        <constraint firstItem="HKr-MU-Tox" firstAttribute="leading" secondItem="4Kv-Sx-ecz" secondAttribute="trailing" constant="10" id="Wto-gw-uPQ"/>
+                        <constraint firstItem="4Kv-Sx-ecz" firstAttribute="leading" secondItem="ti7-zE-Mho" secondAttribute="leading" id="dcl-Lp-ou2"/>
+                        <constraint firstItem="HKr-MU-Tox" firstAttribute="centerY" secondItem="ti7-zE-Mho" secondAttribute="centerY" id="hm6-So-vkA"/>
+                        <constraint firstItem="cwg-9I-H1L" firstAttribute="centerY" secondItem="ti7-zE-Mho" secondAttribute="centerY" id="j2h-U9-nhL"/>
+                        <constraint firstItem="cwg-9I-H1L" firstAttribute="leading" secondItem="HKr-MU-Tox" secondAttribute="trailing" id="u2Z-P2-fuQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ti7-zE-Mho" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WsP-2Q-A2m"/>
+                <constraint firstAttribute="bottom" secondItem="ti7-zE-Mho" secondAttribute="bottom" id="hh0-3E-xXU"/>
+                <constraint firstItem="ti7-zE-Mho" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="l7g-dV-fWc"/>
+                <constraint firstAttribute="trailing" secondItem="ti7-zE-Mho" secondAttribute="trailing" id="nOt-JO-5yU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftBtn" destination="4Kv-Sx-ecz" id="yF4-mG-UWM"/>
+                <outlet property="mTextField" destination="HKr-MU-Tox" id="4uV-rn-zZs"/>
+                <outlet property="rightBtn" destination="cwg-9I-H1L" id="JSe-fj-HfA"/>
+            </connections>
+            <point key="canvasLocation" x="-755" y="-456"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Shape-" width="19" height="19"/>
+        <image name="password" width="19" height="19"/>
+    </resources>
+</document>

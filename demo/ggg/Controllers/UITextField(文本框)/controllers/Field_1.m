@@ -7,6 +7,7 @@
 
 #import "Field_1.h"
 #import "JKTextField.h"
+#import "MJTextField.h"
 @interface Field_1 ()<UITextFieldDelegate>
 {
     BOOL isOpen;
@@ -17,12 +18,15 @@
 @property(nonatomic, strong)UITextField *userNameTf;   /** 账号  */
 
 @property (nonatomic, strong) UIButton *editBtn;             /**<  账号左边按钮 */
+
+
 @end
 
 @implementation Field_1
 
 
 #pragma mark ************** 懒加载控件
+
 - (UITextField *)tf
 {
     if(!_tf)
@@ -46,7 +50,7 @@
     if(!_searchBar)
     {
         _searchBar = [[JKTextField alloc]initWithFrame:CGRectMake(50,150, SCREEN_WIDTH-100, 40)];
-        _searchBar.backgroundColor = [UIColor grayColor];
+        _searchBar.backgroundColor = [UIColor whiteColor];
         _searchBar.borderStyle=UITextBorderStyleRoundedRect;
         _searchBar.placeholder = @"淘淘淘宝贝";
         _searchBar.clearButtonMode=YES;
@@ -62,12 +66,14 @@
         
         //左侧图片
         UIImageView *Image = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 18, 18)];
-        Image.image = [UIImage imageNamed:@"shan"];
+        Image.image = [UIImage imageNamed:@"Shape-"];
         Image.userInteractionEnabled = YES;
         UITapGestureRecognizer *tapp=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(titleImgClick:)];
         [Image addGestureRecognizer:tapp];
         _searchBar.leftView = Image;
         _searchBar.leftViewMode = UITextFieldViewModeAlways;
+        
+        //UITextField Clear Button 与 RightView 不能共存
         
     }
     return _searchBar;
@@ -190,8 +196,8 @@
     [self.view addSubview:self.userView];
     [self.userView addSubview:self.userNameTf];
     [self.userView addSubview:self.editBtn];
-    
-    
+
+
     
 }
 
